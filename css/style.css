@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* common */
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary--font--black: #000;
+  --primary--background--blue: #fbfeff;
+  --primary--background--white: #fff;
+
+  --primary--font-size-pc-oomidashi: 4rem;
+  --primary--font-size-pc-nakamidashi: 2.4rem;
+  --primary--font-size-pc-text: 2rem;
+  --primary--font-size-sp-oonidashi: 2.4rem;
+  --primary--font-size-sp-nakamidashi: 2rem;
+  --primary--font-size-sp-text: 1.6rem;
+}
+
+body {
+  font-family: "Noto sans JP", Arial, Helvetica, sans-serif;
+  font-size: var(--primary--font-size-sp-text);
+  color: var(--primary--font--black);
+  background-color: var(--primary--background--white);
+  line-height: 1.8;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and(min-width:769px) {
+  body {
+    font-size: var(--primary--font-size-pc-text);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+.first-view-area {
+  background-image: url(../image/pf-background-greenandblue-60p.png);
+  background-size: cover;
+}
